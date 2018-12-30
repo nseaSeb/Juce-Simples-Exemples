@@ -5,4 +5,5 @@ SplashScreen -> Affiche une image d'accueil (Splash) à l'ouverture de l'applica
 
 KnobImage -> Potentiomètre rotatif customisé par une image
               (Slider, LookAndFeel)
+        ![Texte alternatif](KnobImage/KnobImg.png)      
               
