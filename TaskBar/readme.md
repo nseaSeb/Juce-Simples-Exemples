@@ -3,4 +3,4 @@
 Remplacer simplement le fichier main.cpp par celui-ci
 Ajouter l'icone de Juce à votre programme ou votre propre icone
 
-
+![Texte alternatif](taskbar.png) 
