@@ -1,5 +1,6 @@
 # Juce-SplashScreen
 Simple SplashScreen Exemple
+
 L'url de la classe SplashScreen sur le site de Juce:
 https://docs.juce.com/master/classSplashScreen.html
 
