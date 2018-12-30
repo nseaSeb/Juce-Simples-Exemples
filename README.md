@@ -19,10 +19,17 @@ Un simple exemple pour ajouter un SplashScreen dans une application Juce
 8) Et c'est tout !
 
 Notez BinaryData::splash_png pour retrouver mon image dans le fichier binaire de mon application
+
 splash->deleteAfterDelay (RelativeTime::seconds (4), true);
+
 splash le pointeur vers mon objet SplashScreen crée et nommé splash
+
 -> car splash est un pointeur
+
 deleteAfterDelay appel la fonction qui fermera notre splashSreen apres un delais
+
 RelativeTime::seconds (4) 4 secondes ici
+
 true , booléen pour valider que nous sommes ok pour que l'utilisateur puisse fermer le splash avant que le delais soit passé...
+
 splash->deleteAfterDelay (RelativeTime::seconds (4), false); // dans ce cas pas de clic autorisé pour fermer...
