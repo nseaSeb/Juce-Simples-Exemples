@@ -50,13 +50,20 @@ public:
         props.setStorageParameters(options);
     }
     
-    void paint (Graphics&) override
-    {}
+    void paint (Graphics& g) override
+    {
+        g.setColour(Colours::white);
+        g.drawText (currentSizeAsString, getLocalBounds(), Justification::centred, true);
+    }
     void resized() override
-    {}
+    {
+         currentSizeAsString = "Width: " + String (getWidth()) + " x Height: " + String (getHeight());
+    }
 
 private:
         ApplicationProperties props;
+    String currentSizeAsString;
+  
     //==============================================================================
     // Your private member variables go here...
 
