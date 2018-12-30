@@ -8,5 +8,6 @@ Des exemples très simples réalisé avec Juce
         ![Texte alternatif](KnobImage/KnobImg.png)      
         
 * TaskBar -> affiche un menu dans la barre des tâches
+
         ![Texte alternatif](TaskBar/taskbar.png) 
               
