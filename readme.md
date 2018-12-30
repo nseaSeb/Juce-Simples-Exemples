@@ -6,4 +6,8 @@ Des exemples très simples réalisé avec Juce
 * KnobImage -> Potentiomètre rotatif customisé par une image
               (Slider, LookAndFeel)
         ![Texte alternatif](KnobImage/KnobImg.png)      
+        
+* TaskBar -> affiche un menu dans la barre des tâches
+
+![Texte alternatif](TaskBar/taskbar.png) 
               
