@@ -15,6 +15,7 @@ Ici quelques trucs et astuces
 </code>
 
 * Logger
-
-Logger::writeToLog ("String");
+  
+<code>
+Logger::writeToLog ("String"); </code>  
   
