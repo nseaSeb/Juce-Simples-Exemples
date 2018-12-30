@@ -13,4 +13,8 @@ Ici quelques trucs et astuces
 	
 }
 </code>
+
+* Logger
+
+Logger::writeToLog ("String");
   
