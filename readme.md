@@ -1,4 +1,5 @@
-Des exemples simples réalisé avec Juce
+# Juce Simples exemples
+Des exemples très simples réalisé avec Juce
 
 SplashScreen -> Affiche une image d'accueil (Splash) à l'ouverture de l'application
 
