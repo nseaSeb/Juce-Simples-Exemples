@@ -6,9 +6,11 @@ Ajouter l'icone de Juce à votre programme ou votre propre icone
 ![Texte alternatif](taskbar.png) 
 
 Le code:
+
 <code>
   
   #if JUCE_WINDOWS || JUCE_LINUX || JUCE_MAC // Pour ne pas l'implémenter sur IOS ou android
+  
 class TestTrayIcon : public SystemTrayIconComponent, private Timer
 {
 public:
@@ -39,4 +41,12 @@ private:
 };
 #endif
 
+// On associe notre classe à notre fenetre
+
+  #if JUCE_WINDOWS || JUCE_LINUX || JUCE_MAC
+            taskbarIcon.reset (new TestTrayIcon());
+  #endif
+                
 </code>
+
+
