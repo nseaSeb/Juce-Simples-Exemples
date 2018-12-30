@@ -9,15 +9,20 @@ Le code:
 
 <code>
   
-  #if JUCE_WINDOWS || JUCE_LINUX || JUCE_MAC // Pour ne pas l'implémenter sur IOS ou android
+#if JUCE_WINDOWS || JUCE_LINUX || JUCE_MAC // Pour ne pas l'implémenter sur IOS ou android
   
 class TestTrayIcon : public SystemTrayIconComponent, private Timer
+
 {
+
 public:
+
     TestTrayIcon(){
+    
         setIconImage (ImageFileFormat::loadFrom(BinaryData::juce_icon_png,BinaryData::juce_icon_pngSize));
         setIconTooltip ("TestTrayIcon");
         m.addItem (1, "Quit");
+        
     }
     ~TestTrayIcon(){
         
@@ -46,7 +51,11 @@ private:
   #if JUCE_WINDOWS || JUCE_LINUX || JUCE_MAC
             taskbarIcon.reset (new TestTrayIcon());
   #endif
-                
+// on déclare notre objet
+
+    private:
+            std::unique_ptr<Component> taskbarIcon;
+            
 </code>
 
 
