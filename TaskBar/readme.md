@@ -49,8 +49,10 @@ private:
 // On associe notre classe à notre fenetre
 
   #if JUCE_WINDOWS || JUCE_LINUX || JUCE_MAC
+  
             taskbarIcon.reset (new TestTrayIcon());
   #endif
+  
 // on déclare notre objet
 
     private:
