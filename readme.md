@@ -9,5 +9,5 @@ Des exemples très simples réalisé avec Juce
         
 * TaskBar -> affiche un menu dans la barre des tâches
 
-        ![Texte alternatif](TaskBar/taskbar.png) 
+    ![Texte alternatif](TaskBar/taskbar.png) 
               
