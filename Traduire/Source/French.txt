@@ -1,0 +1,6 @@
+language: French
+countries: FR
+
+
+"Master Volume" = "Volume général"
+"Filter frequency" = "Fréquence du filtre"
