@@ -1,0 +1,3 @@
+# Implémenter Undo / Redo (annuler / refaire)
+(UndoManager / ValueTree) 
+Un exemple qui utilise 2 Sliders et implémente la fonction annumer/refaire pour ces Sliders
