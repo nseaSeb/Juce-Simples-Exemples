@@ -9,7 +9,7 @@ Des exemples très simples réalisé avec Juce
               (Slider, LookAndFeel)
         ![Texte alternatif](KnobImage/KnobImg.png)      
 * ToggleImage -> la suite de knobImage, ici on personnalise les ToggleButton
-
+        ![Texte alternatif](ToggleImage/Toggle.png) 
 * TaskBar -> affiche un menu dans la barre des tâches
 
     ![Texte alternatif](TaskBar/taskbar.png) 
