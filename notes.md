@@ -27,3 +27,21 @@ Logger::writeToLog ("String"); </code>
         sysexdata[4] = 0x44; //Remplace 0x04 par 0x44 
 </code>
   
+*3 approches pour passer nos valeurs :
+
+<code>
+void incrementer_par_valeur(int x) { 
+    x++; 
+    // X est recopié
+} 
+
+void incrementer_par_pointeur(int * px) { 
+    if(px) (*px)++; 
+    //On doit vérifié que le pointeur n'est pas nul
+} 
+
+void incrementer_par_reference(int & x) { 
+    x++; 
+    // A privilégier
+} 
+</code>
