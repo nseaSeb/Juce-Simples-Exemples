@@ -1,4 +1,4 @@
-# Notes
+# Notes / Mémo
 Ici quelques trucs et astuces 
 
 * String
