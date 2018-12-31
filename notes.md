@@ -31,17 +31,23 @@ Logger::writeToLog ("String"); </code>
 
 <code>
 void incrementer_par_valeur(int x) { 
-    x++; 
+	
+    x++;
+    
     // X est recopié
 } 
 
 void incrementer_par_pointeur(int * px) { 
+
     if(px) (*px)++; 
+    
     //On doit vérifié que le pointeur n'est pas nul
 } 
 
 void incrementer_par_reference(int & x) { 
+
     x++; 
+    
     // A privilégier
 } 
 </code>
