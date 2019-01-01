@@ -51,12 +51,12 @@ void drawRotarySlider(Graphics& g,
         auto fontSize = jmin (15.0f, button.getHeight() * 0.75f);
     
         
-        if(shouldDrawButtonAsHighlighted)
+        if(shouldDrawButtonAsHighlighted) // Quand la souris entre dans notre composant
         {
             g.fillRect(0, button.getHeight() - (int(fontSize)), button.getWidth(), int(fontSize));
         }
         
-       if(button.getToggleState())//        if(shouldDrawButtonAsDown)
+       if(button.getToggleState()) // Si le bouton est enclanchée 
         {
             g.drawImage(imageToggle, 0, 0, button.getWidth(),button.getHeight(), 0, 0, imageToggle.getWidth(), imageToggle.getWidth());
            
@@ -72,7 +72,7 @@ void drawRotarySlider(Graphics& g,
         g.setColour (button.findColour (ToggleButton::textColourId));
         g.setFont (fontSize);
         
-        if (! button.isEnabled())
+        if (! button.isEnabled()) // Si le bouton est disabled on le grise
             g.setOpacity (0.5f);
         
         g.drawFittedText (button.getButtonText(),
