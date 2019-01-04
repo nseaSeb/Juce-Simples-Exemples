@@ -13,4 +13,6 @@ Des exemples très simples réalisé avec Juce
 * TaskBar -> affiche un menu dans la barre des tâches
 
     ![Texte alternatif](TaskBar/taskbar.png) 
-              
+    
+* Grille -> ajoût d'objet dans un array et alignement en grille
+    ![Texte alternatif](Grille/Grille.png) 
