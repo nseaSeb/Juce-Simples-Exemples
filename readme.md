@@ -16,3 +16,5 @@ Des exemples très simples réalisé avec Juce
     
 * Grille -> ajoût d'objet dans un array et alignement en grille
     ![Texte alternatif](Grille/Grille.png) 
+* PositionSouris -> Comment afficher une ligne verticale et horizontale qui suivent la souris
+    ![Texte alternatif](PositionSouris/Souris.png) 
