@@ -1,5 +1,5 @@
 # Juce Simples exemples
-Des exemples très simples réalisé avec Juce
+Des exemples très simples réalisé avec Juce, débutant avec Juce c'est un peu mon carnet de notes que je partage...
 
 * SplashScreen -> Affiche une image d'accueil (Splash) à l'ouverture de l'application
 * Traduire -> un petit exemple pour implémenter la localisation.
