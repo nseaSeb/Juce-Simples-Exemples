@@ -55,7 +55,9 @@ void incrementer_par_reference(int & x) {
 
 #Les pointeurs: (merci à Daniel et xenakios du forum Juce)
 std::unique_ptr : le ptr possède l'objet, et il sera supprimé, une fois que le ptr sortira du champ d'application. ScopedPointer est la même chose et enveloppe maintenant en interne un std::unique_ptr, donc aucune raison d'utiliser ScopedPointer dans un nouveau code
+
 std::shared_ptr : la propriété est partagée entre tous les shared_ptr qui pointent vers le même objet. Une fois que le dernier shared_ptr sort du périmètre, l'objet est supprimé. ReferenceCountedObject::Ptr est la même chose, mais différemment implémenté, ReferenceCountedObject est un compteur de référence intrusif, vs std::shared_ptr est non-intrusif
+
 std::weak_ptr : ne possède pas du tout l'objet, mais le ptr est automatiquement mis à nullptr, une fois que la pointee est effacée. Il y a le Composant::SafePointer et WeakReference dans le jus, qui font la même chose.
 SharedResourcePointer : créer l'objet à la volée et le partager, s'il a déjà été créé ailleurs. Puisque vous n'avez aucun contrôle, quand il est créé et quand il ne l'est pas, ce n'est pas bien adapté à la persistance. Je ne suis pas au courant d'une version de la STL.
 Une spécialité de weak_ptr, est, que pour utiliser un weak_ptr, vous devez créer un shared_ptr à partir du weak_ptr, ce qui empêchera l'objet d'être supprimé ailleurs (prolongeant la vie utile).
