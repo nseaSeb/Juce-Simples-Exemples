@@ -13,3 +13,8 @@ https://www.hackaudio.com // infos sur la prog audio
 https://www.midi.org // La norme MIDI
 
 https://www.g200kg.com/en/webknobman/gallery.php?ty=knob&s= // Création d'images pour nos interfaces
+
+
+OPENGL:
+
+https://www.shadertoy.com/view/WdXGRj // librairie d'exemples
