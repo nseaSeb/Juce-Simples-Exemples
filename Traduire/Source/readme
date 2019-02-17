@@ -1,2 +1,15 @@
 
 French.txt est ici placé dans le dossier Resources d'Xcode.
+
+Vous pouvez aussi inclure le fichier dans l'application (binary)
+Et utiliser le code suivant:
+
+        Logger::writeToLog( SystemStats::getUserLanguage());
+        if(SystemStats::getUserLanguage()=="fr")
+        {
+            juce::LocalisedStrings *currentMappings = new             juce::LocalisedStrings(String::createStringFromData(BinaryData::French_txt, BinaryData::French_txtSize), false);
+            juce::LocalisedStrings::setCurrentMappings(currentMappings);
+ 
+
+        }
+
