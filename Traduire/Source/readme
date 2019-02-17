@@ -7,7 +7,7 @@ Et utiliser le code suivant:
         Logger::writeToLog( SystemStats::getUserLanguage());
         if(SystemStats::getUserLanguage()=="fr")
         {
-            juce::LocalisedStrings *currentMappings = new             juce::LocalisedStrings(String::createStringFromData(BinaryData::French_txt, BinaryData::French_txtSize), false);
+            juce::LocalisedStrings *currentMappings = new juce::LocalisedStrings(String::createStringFromData(BinaryData::French_txt, BinaryData::French_txtSize), false);
             juce::LocalisedStrings::setCurrentMappings(currentMappings);
  
 
